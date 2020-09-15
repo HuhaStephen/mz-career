@@ -1,5 +1,14 @@
 package com.company.project.career.algorithms.sort;
 
+/**
+ * 此版实现是自己根据快速排序的基本思路写的，调试的过程中出现了一些问题并进行了逻辑修改：<br>
+ * quickSort 的递归调用发生了无限循环的问题；<br>
+ * sortOnePartition 中在 数据为： 9,8,9，left=0,right=2，会发生无限循环的问题
+ * <p>
+ * 算法的正确性还需要充分的数据验证，这里只是根据几个简单的测试用例进行了验证；
+ * 
+ * @author zhangyanxiang 2020年9月15日 上午10:40:17
+ */
 public class QuickSortV0 {
 
     public static void main(String[] args) {
